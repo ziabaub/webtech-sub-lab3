@@ -22,10 +22,8 @@ function checkSpelling($arr){
         $check =false;
         $result="Check Email";
     }
-
-
     if ($check=="Success ! "){
-        $data = $array_email[0].$array_name[0]."\n";
+        $data = $array_email[0]." ".$array_name[0]."\n";
         file_put_contents("Contents.txt",$data,FILE_APPEND);
         return $result;
     }else{
